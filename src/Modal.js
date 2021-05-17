@@ -10,8 +10,12 @@ class Modal extends Component {
       <div className="container bg-light">
         <h1 className="text-center">{this.props.details.title}</h1>
         <p className="text-center">{this.props.details.nb}</p>
-        <button className="d-block float-right" onClick={this.props.closePopup}>
-          &#x2716;
+        <button
+          type="button"
+          className="btn btn-danger w-100 mx-auto"
+          onClick={this.props.closePopup}
+        >
+          Fermer
         </button>
       </div>
     );
